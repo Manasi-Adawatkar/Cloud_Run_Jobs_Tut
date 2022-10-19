@@ -4,7 +4,7 @@ dbt_tut:
       dataset: dbt_madawatkar
       job_execution_timeout_seconds: 300
       job_retries: 1
-      keyfile: secrets/dbt-service-keyfile
+      keyfile: /secrets/dbt-service-keyfile
       location: us-central1
       method: service-account
       priority: interactive
