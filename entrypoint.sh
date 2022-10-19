@@ -7,10 +7,10 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
-#rm -rf temp_dir
+rm -rf temp_dir
 # get the dbt model
-#git clone --depth 1 https://github.com/mwhitaker/dbt-model-repo.git temp_dir
-#cd temp_dir
+git clone --depth 1 https://github.com/Manasi-Adawatkar/Cloud_Run_Jobs_Tut.git temp_dir
+cd temp_dir
 
 DBT_LOG_FILE=${DBT_LOG_FILE:="dbt_console_output.txt"}
 

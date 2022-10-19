@@ -1,5 +1,6 @@
 # public dbt docker image
-FROM mwhitaker/dbt_all:v1.1.0
+FROM ghcr.io/dbt-labs/dbt-bigquery:1.2.latest
 
-COPY entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh 
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT [ "/entrypoint.sh" ]

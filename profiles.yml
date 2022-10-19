@@ -1,0 +1,14 @@
+dbt_tut:
+  outputs:
+    dev:
+      dataset: dbt_madawatkar
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: /Users/manasiadawatkar/dbt-project-365823-c8aa7bf4d90e.json
+      location: us-central1
+      method: service-account
+      priority: interactive
+      project: dbt-project-365823
+      threads: 4
+      type: bigquery
+  target: dev
