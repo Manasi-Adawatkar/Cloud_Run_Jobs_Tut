@@ -20,8 +20,8 @@ if [ $? -eq 0 ]
   then
     echo "Run OK"
     echo "DBT run OK" >> "${DBT_LOG_FILE}"
-    gsutil cp $DBT_LOG_FILE gs://my-dbt-bq-project/folder/$DBT_LOG_FILE
-    gsutil cp target/run_results.json gs://my-dbt-bq-project/folder/run_results.json
+    # gsutil cp $DBT_LOG_FILE gs://my-dbt-bq-project/folder/$DBT_LOG_FILE
+    # gsutil cp target/run_results.json gs://my-dbt-bq-project/folder/run_results.json
     # or other gcloud cli tools
     # bq extract
     # bq load
@@ -30,6 +30,6 @@ if [ $? -eq 0 ]
   else
     echo "Run Failed"
     echo "DBT run failed" >> "${DBT_LOG_FILE}"
-    gsutil cp $DBT_LOG_FILE gs://my-dbt-bq-project/folder/$DBT_LOG_FILE
+    # gsutil cp $DBT_LOG_FILE gs://my-dbt-bq-project/folder/$DBT_LOG_FILE
     exit 1
 fi
